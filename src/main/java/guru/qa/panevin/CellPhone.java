@@ -1,7 +1,7 @@
 package guru.qa.panevin;
 
 public class CellPhone {
-    int id;
+    static public int id;
     String brand;
     String model;
     int memoryCapacity;
@@ -15,13 +15,16 @@ public class CellPhone {
         this.networkType = networkType;
     }
 
-    public boolean checkIfPhoneIsNew (boolean isPhoneBrandNew){
-        this.isPhoneBrandNew = isPhoneBrandNew;
+    public boolean checkIfPhoneIsNew (){
         return isPhoneBrandNew;
     }
 
-    public String checkBrand (String brand){
+    public String setBrand (String brand){
         this.brand = brand;
+        return brand;
+    }
+
+    public String checkBrand (){
         return brand;
     }
     public int getId (){
